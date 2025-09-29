@@ -10,11 +10,11 @@ import ffmpeg
 import io
 
 
-TOKEN = "MTM0Mjk0OTcxMjcwNTIyNDc4NA.GCwxPT.xtBipgJhsOywfDpGVg8uNappnFf1sGois8T5io"
+TOKEN = "token"
 
 
-STREAM_URL_FLAC = "https://azura.hpsbassline.myftp.biz/listen/haapsaly_bassline/radio.flac"
-STREAM_URL_MP3 = "https://azura.hpsbassline.myftp.biz/listen/haapsaly_bassline/vrc.mp3"
+STREAM_URL_FLAC = "Bla Bla Bla.flac"
+STREAM_URL_MP3 = "Bla Bal Bla.mp3"
 
 # Настройки качества звука (меняйте по желанию)
 FFMPEG_SAMPLE_RATE = 48000  # Частота дискретизации (Гц)
@@ -138,3 +138,4 @@ async def stop(interaction: discord.Interaction):
         await interaction.response.send_message("❌ Бот не был подключен к голосовому каналу.")
 
 bot.run(TOKEN)
+
