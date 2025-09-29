@@ -10,16 +10,16 @@ import ffmpeg
 import io
 
 
-TOKEN = "token"
+TOKEN = "Bla Bla Bla Token Bla Bla Bla"
 
 
 STREAM_URL_FLAC = "Bla Bla Bla.flac"
 STREAM_URL_MP3 = "Bla Bal Bla.mp3"
 
-# Настройки качества звука (меняйте по желанию)
-FFMPEG_SAMPLE_RATE = 48000  # Частота дискретизации (Гц)
-FFMPEG_CHANNELS = 2         # Количество каналов (1=моно, 2=стерео)
-FFMPEG_SAMPLE_FMT = 's16le' # Формат PCM (s16le=16 бит, s32le=32 бит)
+
+FFMPEG_SAMPLE_RATE = 48000  
+FFMPEG_CHANNELS = 2         
+FFMPEG_SAMPLE_FMT = 's16le' 
 
 intents = discord.Intents.default()
 intents.guilds = True
@@ -138,4 +138,5 @@ async def stop(interaction: discord.Interaction):
         await interaction.response.send_message("❌ Бот не был подключен к голосовому каналу.")
 
 bot.run(TOKEN)
+
 
