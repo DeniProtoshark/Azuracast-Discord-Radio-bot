@@ -2,4 +2,4 @@
 For the bot to work, you need
 - discord.py
 - PyNaCl
-- ffmpeg py
+- ffmpeg
